@@ -86,5 +86,10 @@ namespace suivibouteilles.FrmOperations
 
             selection();
         }
+
+        private void txtcodecl_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

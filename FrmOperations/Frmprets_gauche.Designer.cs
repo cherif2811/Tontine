@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.Utils.Drawing.StubGlyphOptions stubGlyphOptions1 = new DevExpress.Utils.Drawing.StubGlyphOptions();
-            DevExpress.XtraGrid.GridFormatRule gridFormatRule1 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.Utils.Drawing.StubGlyphOptions stubGlyphOptions2 = new DevExpress.Utils.Drawing.StubGlyphOptions();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule2 = new DevExpress.XtraGrid.GridFormatRule();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frmprets_gauche));
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
@@ -64,6 +64,7 @@
             this.colprenomclient = new DevExpress.XtraGrid.Columns.GridColumn();
             this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
             this.tmp_clientTableAdapter = new suivibouteilles.Dataset.DataSet1TableAdapters.tmp_clientTableAdapter();
+            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
             this.panelControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
@@ -77,14 +78,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtcodecl.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tmpclientBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // gridColumn2
             // 
-            stubGlyphOptions1.ColorMode = DevExpress.Utils.Drawing.GlyphColorMode.Green;
-            stubGlyphOptions1.Type = DevExpress.Utils.Drawing.GlyphBackgroundType.Ellipse;
+            stubGlyphOptions2.ColorMode = DevExpress.Utils.Drawing.GlyphColorMode.Green;
+            stubGlyphOptions2.Type = DevExpress.Utils.Drawing.GlyphBackgroundType.Ellipse;
             this.behaviorManager1.SetBehaviors(this.gridColumn2, new DevExpress.Utils.Behaviors.Behavior[] {
-            ((DevExpress.Utils.Behaviors.Behavior)(DevExpress.Utils.Behaviors.Common.StubGlyphBehavior.Create(typeof(DevExpress.XtraGrid.Views.Grid.BehaviorSource.StubGlyphBehaviorSourceForGridColumn), stubGlyphOptions1, new System.Drawing.Size(16, 16))))});
+            ((DevExpress.Utils.Behaviors.Behavior)(DevExpress.Utils.Behaviors.Common.StubGlyphBehavior.Create(typeof(DevExpress.XtraGrid.Views.Grid.BehaviorSource.StubGlyphBehaviorSourceForGridColumn), stubGlyphOptions2, new System.Drawing.Size(16, 16))))});
             this.gridColumn2.Caption = "Présent";
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.Visible = true;
@@ -149,10 +151,10 @@
             this.gridColumn2,
             this.colDtCreation,
             this.colDtModification});
-            gridFormatRule1.Column = this.gridColumn2;
-            gridFormatRule1.Name = "Format0";
-            gridFormatRule1.Rule = null;
-            this.gridView1.FormatRules.Add(gridFormatRule1);
+            gridFormatRule2.Column = this.gridColumn2;
+            gridFormatRule2.Name = "Format0";
+            gridFormatRule2.Rule = null;
+            this.gridView1.FormatRules.Add(gridFormatRule2);
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsBehavior.Editable = false;
@@ -247,6 +249,7 @@
             // 
             // panelControl2
             // 
+            this.panelControl2.Controls.Add(this.textEdit1);
             this.panelControl2.Controls.Add(this.txtcodecl);
             this.panelControl2.Controls.Add(this.simpleButton1);
             this.panelControl2.Controls.Add(this.Btupdate);
@@ -266,6 +269,7 @@
             this.txtcodecl.Size = new System.Drawing.Size(36, 20);
             this.txtcodecl.TabIndex = 19;
             this.txtcodecl.Visible = false;
+            this.txtcodecl.EditValueChanged += new System.EventHandler(this.txtcodecl_EditValueChanged);
             // 
             // simpleButton1
             // 
@@ -347,6 +351,15 @@
             // 
             this.tmp_clientTableAdapter.ClearBeforeFill = true;
             // 
+            // textEdit1
+            // 
+            this.textEdit1.Enabled = false;
+            this.textEdit1.Location = new System.Drawing.Point(439, 18);
+            this.textEdit1.Name = "textEdit1";
+            this.textEdit1.Size = new System.Drawing.Size(36, 20);
+            this.textEdit1.TabIndex = 20;
+            this.textEdit1.Visible = false;
+            // 
             // Frmprets_gauche
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -367,6 +380,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtcodecl.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tmpclientBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -405,6 +419,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn colDtModification;
         private System.Windows.Forms.BindingSource tmpclientBindingSource1;
         private Dataset.DataSet1TableAdapters.tmp_clientTableAdapter tmp_clientTableAdapter;
+        private DevExpress.XtraEditors.TextEdit textEdit1;
     }
 }
 
