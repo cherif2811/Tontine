@@ -1,0 +1,1318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CEF96475-1019-4E37-AB12-1E50AD3ACC91}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>suivibouteilles</RootNamespace>
+    <AssemblyName>suivibouteilles</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publier\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon5.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>suivibouteilles.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v21.1.UI, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v21.1.Export, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.SpellChecker.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataVisualization.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Spreadsheet.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.Desktop.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v21.1.UI, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v21.1.Extensions, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v21.1.UI, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v21.1.Wizard, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.CodeParser.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v21.1.Extensions, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v21.1.Core.Desktop, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v21.1.Core, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v21.1.Extensions, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraSpellChecker.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraSpreadsheet.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddTab.cs" />
+    <Compile Include="Classes\AppSetting.cs" />
+    <Compile Include="Classes\ClassConnexion.cs" />
+    <Compile Include="Classes\Les_constants.cs" />
+    <Compile Include="DataEtat\DataSetEtat.cs">
+      <DependentUpon>DataSetEtat.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataEtat\DataSetEtat.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetEtat.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\DataSet1.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Etat\Facture_Simple.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Etat\Facture_Simple.Designer.cs">
+      <DependentUpon>Facture_Simple.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Etat\Facture_tontine.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Etat\Facture_tontine.Designer.cs">
+      <DependentUpon>Facture_tontine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Etat\liste_benefice.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Etat\liste_benefice.Designer.cs">
+      <DependentUpon>liste_benefice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Etat\liste_benefice_par_articles.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Etat\liste_benefice_par_articles.Designer.cs">
+      <DependentUpon>liste_benefice_par_articles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Etat\liste_collecteur.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Etat\liste_collecteur.Designer.cs">
+      <DependentUpon>liste_collecteur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Etat\liste_commission_par_collecteur.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Etat\liste_commission_par_collecteur.Designer.cs">
+      <DependentUpon>liste_commission_par_collecteur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Etat\Liste_des_Vente.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Etat\Liste_des_Vente.Designer.cs">
+      <DependentUpon>Liste_des_Vente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Etat\liste_des_ventes_simple.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Etat\liste_des_ventes_simple.Designer.cs">
+      <DependentUpon>liste_des_ventes_simple.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Etat\liste_des_ventes_tontine_simple.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Etat\liste_des_ventes_tontine_simple.Designer.cs">
+      <DependentUpon>liste_des_ventes_tontine_simple.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Etat\liste_souscription_client_par_pack.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Etat\liste_souscription_client_par_pack.Designer.cs">
+      <DependentUpon>liste_souscription_client_par_pack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Etat\liste_souscription_parc.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Etat\liste_souscription_parc.Designer.cs">
+      <DependentUpon>liste_souscription_parc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Etat\liste_tontine_par_zone.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Etat\liste_tontine_par_zone.Designer.cs">
+      <DependentUpon>liste_tontine_par_zone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Etat\listing_commission_toute.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Etat\listing_commission_toute.Designer.cs">
+      <DependentUpon>listing_commission_toute.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Etat\Situation_des_cotisation_des_parcs.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Etat\Situation_des_cotisation_des_parcs.Designer.cs">
+      <DependentUpon>Situation_des_cotisation_des_parcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Etat\Situation_en_attente.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Etat\Situation_en_attente.Designer.cs">
+      <DependentUpon>Situation_en_attente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Etat\Situation_tontine_par_collecteur.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Etat\Situation_tontine_par_collecteur.Designer.cs">
+      <DependentUpon>Situation_tontine_par_collecteur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Etat\Situation_tontine_solde_zero.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Etat\Situation_tontine_solde_zero.Designer.cs">
+      <DependentUpon>Situation_tontine_solde_zero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Etat\Situation_tontine_vendu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Etat\Situation_tontine_vendu.Designer.cs">
+      <DependentUpon>Situation_tontine_vendu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Etat\xtrabonclient.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Etat\xtrabonclient.Designer.cs">
+      <DependentUpon>xtrabonclient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Etat\xtraBonEntree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Etat\xtraBonEntree.Designer.cs">
+      <DependentUpon>xtraBonEntree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Etat\xtrahistoBonSortie.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Etat\xtrahistoBonSortie.Designer.cs">
+      <DependentUpon>xtrahistoBonSortie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Etat\xtracompteclient.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Etat\xtracompteclient.Designer.cs">
+      <DependentUpon>xtracompteclient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Etat\xtraEtatStock.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Etat\xtraEtatStock.Designer.cs">
+      <DependentUpon>xtraEtatStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Etat\xtraEtatStockparcategorieetsous.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Etat\xtraEtatStockparcategorieetsous.Designer.cs">
+      <DependentUpon>xtraEtatStockparcategorieetsous.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Etat\xtrahistoBonEntree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Etat\xtrahistoBonEntree.Designer.cs">
+      <DependentUpon>xtrahistoBonEntree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Etat\xtraJournalBonEntree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Etat\xtraJournalBonEntree.Designer.cs">
+      <DependentUpon>xtraJournalBonEntree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Etat\xtraJournalBonEntreeFrs.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Etat\xtraJournalBonEntreeFrs.Designer.cs">
+      <DependentUpon>xtraJournalBonEntreeFrs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Etat\xtraJournalBonSortie.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Etat\xtraJournalBonSortie.Designer.cs">
+      <DependentUpon>xtraJournalBonSortie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Etat\xtraJournalBonSortieClient.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Etat\xtraJournalBonSortieClient.Designer.cs">
+      <DependentUpon>xtraJournalBonSortieClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Etat\xtraJournalRetour.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Etat\xtraJournalRetour.Designer.cs">
+      <DependentUpon>xtraJournalRetour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Etat\xtraJournalRetourClient.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Etat\xtraJournalRetourClient.Designer.cs">
+      <DependentUpon>xtraJournalRetourClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Etat\xtraListearticles.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Etat\xtraListearticles.Designer.cs">
+      <DependentUpon>xtraListearticles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Etat\xtraListedesClients.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Etat\xtraListedesClients.Designer.cs">
+      <DependentUpon>xtraListedesClients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Etat\xtralistefournisseur.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Etat\xtralistefournisseur.Designer.cs">
+      <DependentUpon>xtralistefournisseur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Etat\liste_tontine.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Etat\liste_tontine.Designer.cs">
+      <DependentUpon>liste_tontine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Etat\xtrBonSortie.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Etat\xtrBonSortie.Designer.cs">
+      <DependentUpon>xtrBonSortie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConnexion\BaseDonnee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConnexion\BaseDonnee.Designer.cs">
+      <DependentUpon>BaseDonnee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConnexion\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConnexion\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEdition\Frmbenefice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmEdition\Frmbenefice.Designer.cs">
+      <DependentUpon>Frmbenefice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEdition\frmlistecommission.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmEdition\frmlistecommission.Designer.cs">
+      <DependentUpon>frmlistecommission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEdition\Frmlistetontine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmEdition\Frmlistetontine.Designer.cs">
+      <DependentUpon>Frmlistetontine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEdition\Frmliste_cotisation_fin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmEdition\Frmliste_cotisation_fin.Designer.cs">
+      <DependentUpon>Frmliste_cotisation_fin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEdition\Frmliste_parc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmEdition\Frmliste_parc.Designer.cs">
+      <DependentUpon>Frmliste_parc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEdition\Frmlisting_tontine_par_collecteur.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmEdition\Frmlisting_tontine_par_collecteur.Designer.cs">
+      <DependentUpon>Frmlisting_tontine_par_collecteur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEdition\Frmlisting_tontine_solde_zero.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmEdition\Frmlisting_tontine_solde_zero.Designer.cs">
+      <DependentUpon>Frmlisting_tontine_solde_zero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEdition\Frm_etat_de_stocks.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmEdition\Frm_etat_de_stocks.Designer.cs">
+      <DependentUpon>Frm_etat_de_stocks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEdition\Frm_liste_vente.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmEdition\Frm_liste_vente.Designer.cs">
+      <DependentUpon>Frm_liste_vente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFiltre\FrmFiltreclt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFiltre\FrmFiltreclt.Designer.cs">
+      <DependentUpon>FrmFiltreclt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFiltre\Frmfiltreetatstock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFiltre\Frmfiltreetatstock.Designer.cs">
+      <DependentUpon>Frmfiltreetatstock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFiltre\Frmfiltrefrsbe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFiltre\Frmfiltrefrsbe.Designer.cs">
+      <DependentUpon>Frmfiltrefrsbe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFiltre\Frmfiltclientreretour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFiltre\Frmfiltclientreretour.Designer.cs">
+      <DependentUpon>Frmfiltclientreretour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGestion\Affectationparkclients.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmGestion\Affectationparkclients.Designer.cs">
+      <DependentUpon>Affectationparkclients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGestion\Frmcollecteurdroit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmGestion\Frmcollecteurdroit.Designer.cs">
+      <DependentUpon>Frmcollecteurdroit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGestion\Frmcollecteurgauche.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmGestion\Frmcollecteurgauche.Designer.cs">
+      <DependentUpon>Frmcollecteurgauche.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGestion\Frmparkproduits.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmGestion\Frmparkproduits.Designer.cs">
+      <DependentUpon>Frmparkproduits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGestion\Frmimport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmGestion\Frmimport.Designer.cs">
+      <DependentUpon>Frmimport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOperations\commissiondroite.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmOperations\commissiondroite.Designer.cs">
+      <DependentUpon>commissiondroite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOperations\commissiongauche.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmOperations\commissiongauche.Designer.cs">
+      <DependentUpon>commissiongauche.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOperations\Frmbonsortirupdate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmOperations\Frmbonsortirupdate.Designer.cs">
+      <DependentUpon>Frmbonsortirupdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOperations\Frmfacturationdroite.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmOperations\Frmfacturationdroite.Designer.cs">
+      <DependentUpon>Frmfacturationdroite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOperations\Frmfacturationgauche.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmOperations\Frmfacturationgauche.Designer.cs">
+      <DependentUpon>Frmfacturationgauche.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOperations\FrmInterrogation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmOperations\FrmInterrogation.Designer.cs">
+      <DependentUpon>FrmInterrogation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOperations\Frmreçu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOperations\Frmreçu.Designer.cs">
+      <DependentUpon>Frmreçu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOperations\Frmtontinedroit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmOperations\Frmtontinedroit.Designer.cs">
+      <DependentUpon>Frmtontinedroit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOperations\Frmtontinegauche.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmOperations\Frmtontinegauche.Designer.cs">
+      <DependentUpon>Frmtontinegauche.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOperations\Frmupdate_facture_tontine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmOperations\Frmupdate_facture_tontine.Designer.cs">
+      <DependentUpon>Frmupdate_facture_tontine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOperations\Frm_vente_simple.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmOperations\Frm_vente_simple.Designer.cs">
+      <DependentUpon>Frm_vente_simple.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOperations\Frm_vente_simple_droite.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmOperations\Frm_vente_simple_droite.Designer.cs">
+      <DependentUpon>Frm_vente_simple_droite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOperations\Frm_vente_simple_update.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmOperations\Frm_vente_simple_update.Designer.cs">
+      <DependentUpon>Frm_vente_simple_update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmParam\Frmzones.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmParam\Frmzones.Designer.cs">
+      <DependentUpon>Frmzones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmrapports\FrmEtatstock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Frmrapports\FrmEtatstock.Designer.cs">
+      <DependentUpon>FrmEtatstock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEdition\Frmprint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmEdition\Frmprint.Designer.cs">
+      <DependentUpon>Frmprint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGestion\Frmajouterclient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGestion\Frmajouterclient.Designer.cs">
+      <DependentUpon>Frmajouterclient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGestion\Frmajouterfournisseur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGestion\Frmajouterfournisseur.Designer.cs">
+      <DependentUpon>Frmajouterfournisseur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGestion\Frmarticledrt.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmGestion\Frmarticledrt.Designer.cs">
+      <DependentUpon>Frmarticledrt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGestion\Frmarticlegauche.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmGestion\Frmarticlegauche.Designer.cs">
+      <DependentUpon>Frmarticlegauche.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGestion\Frmcltdrt.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmGestion\Frmcltdrt.Designer.cs">
+      <DependentUpon>Frmcltdrt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGestion\Frmcltgauche.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmGestion\Frmcltgauche.Designer.cs">
+      <DependentUpon>Frmcltgauche.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGestion\FrmFrsdroite.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmGestion\FrmFrsdroite.Designer.cs">
+      <DependentUpon>FrmFrsdroite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGestion\FrmFrsgauche.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmGestion\FrmFrsgauche.Designer.cs">
+      <DependentUpon>FrmFrsgauche.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMenu\Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenu\Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMenu\SplashScreen1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenu\SplashScreen1.Designer.cs">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMenu\WaitForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenu\WaitForm1.Designer.cs">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOperations\Frmbonentreedroite.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmOperations\Frmbonentreedroite.Designer.cs">
+      <DependentUpon>Frmbonentreedroite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOperations\FrmbonEntreegauche.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmOperations\FrmbonEntreegauche.Designer.cs">
+      <DependentUpon>FrmbonEntreegauche.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOperations\Frmbonsortiedroite.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmOperations\Frmbonsortiedroite.Designer.cs">
+      <DependentUpon>Frmbonsortiedroite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOperations\Frmbonsortiegauche.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmOperations\Frmbonsortiegauche.Designer.cs">
+      <DependentUpon>Frmbonsortiegauche.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOperations\FrmmodifBonretour.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmOperations\FrmmodifBonretour.Designer.cs">
+      <DependentUpon>FrmmodifBonretour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOperations\Frmmodifierbonentree.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmOperations\Frmmodifierbonentree.Designer.cs">
+      <DependentUpon>Frmmodifierbonentree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOperations\Frmretourdroite.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmOperations\Frmretourdroite.Designer.cs">
+      <DependentUpon>Frmretourdroite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOperations\Frmretourgauchecs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmOperations\Frmretourgauchecs.Designer.cs">
+      <DependentUpon>Frmretourgauchecs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmParam\Frmcategorie.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmParam\Frmcategorie.Designer.cs">
+      <DependentUpon>Frmcategorie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmParam\FrmClassification.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmParam\FrmClassification.Designer.cs">
+      <DependentUpon>FrmClassification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmParam\FrmMagasin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmParam\FrmMagasin.Designer.cs">
+      <DependentUpon>FrmMagasin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmParam\Frmparametragegeneral.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmParam\Frmparametragegeneral.Designer.cs">
+      <DependentUpon>Frmparametragegeneral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmParam\Frmparamgauche.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmParam\Frmparamgauche.Designer.cs">
+      <DependentUpon>Frmparamgauche.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmParam\Frmsociete.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmParam\Frmsociete.Designer.cs">
+      <DependentUpon>Frmsociete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmParam\Frmsouscategorie.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmParam\Frmsouscategorie.Designer.cs">
+      <DependentUpon>Frmsouscategorie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmrapports\FrmJournalBonEntree.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Frmrapports\FrmJournalBonEntree.Designer.cs">
+      <DependentUpon>FrmJournalBonEntree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmrapports\FrmJournalBonSortie.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Frmrapports\FrmJournalBonSortie.Designer.cs">
+      <DependentUpon>FrmJournalBonSortie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmrapports\FrmJournalRetour.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Frmrapports\FrmJournalRetour.Designer.cs">
+      <DependentUpon>FrmJournalRetour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmrapports\Frmrapportclt.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Frmrapports\Frmrapportclt.Designer.cs">
+      <DependentUpon>Frmrapportclt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmrequetes\Frmrequete.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Frmrequetes\Frmrequete.Designer.cs">
+      <DependentUpon>Frmrequete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmutilisateur\Frmacces.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Frmutilisateur\Frmacces.Designer.cs">
+      <DependentUpon>Frmacces.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmutilisateur\FrmProfilgauche.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Frmutilisateur\FrmProfilgauche.Designer.cs">
+      <DependentUpon>FrmProfilgauche.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmutilisateur\Frmuser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Frmutilisateur\Frmuser.Designer.cs">
+      <DependentUpon>Frmuser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmutilisateur\Frmusergauche.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Frmutilisateur\Frmusergauche.Designer.cs">
+      <DependentUpon>Frmusergauche.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Etat\Facture_Simple.resx">
+      <DependentUpon>Facture_Simple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Etat\Facture_tontine.resx">
+      <DependentUpon>Facture_tontine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Etat\liste_benefice.resx">
+      <DependentUpon>liste_benefice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Etat\liste_benefice_par_articles.resx">
+      <DependentUpon>liste_benefice_par_articles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Etat\liste_collecteur.resx">
+      <DependentUpon>liste_collecteur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Etat\liste_commission_par_collecteur.resx">
+      <DependentUpon>liste_commission_par_collecteur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Etat\Liste_des_Vente.resx">
+      <DependentUpon>Liste_des_Vente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Etat\liste_des_ventes_simple.resx">
+      <DependentUpon>liste_des_ventes_simple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Etat\liste_des_ventes_tontine_simple.resx">
+      <DependentUpon>liste_des_ventes_tontine_simple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Etat\liste_souscription_client_par_pack.resx">
+      <DependentUpon>liste_souscription_client_par_pack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Etat\liste_souscription_parc.resx">
+      <DependentUpon>liste_souscription_parc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Etat\liste_tontine_par_zone.resx">
+      <DependentUpon>liste_tontine_par_zone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Etat\listing_commission_toute.resx">
+      <DependentUpon>listing_commission_toute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Etat\Situation_des_cotisation_des_parcs.resx">
+      <DependentUpon>Situation_des_cotisation_des_parcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Etat\Situation_en_attente.resx">
+      <DependentUpon>Situation_en_attente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Etat\Situation_tontine_par_collecteur.resx">
+      <DependentUpon>Situation_tontine_par_collecteur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Etat\Situation_tontine_solde_zero.resx">
+      <DependentUpon>Situation_tontine_solde_zero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Etat\Situation_tontine_vendu.resx">
+      <DependentUpon>Situation_tontine_vendu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Etat\xtrabonclient.resx">
+      <DependentUpon>xtrabonclient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Etat\xtraBonEntree.resx">
+      <DependentUpon>xtraBonEntree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Etat\xtrahistoBonSortie.resx">
+      <DependentUpon>xtrahistoBonSortie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Etat\xtracompteclient.resx">
+      <DependentUpon>xtracompteclient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Etat\xtraEtatStock.resx">
+      <DependentUpon>xtraEtatStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Etat\xtraEtatStockparcategorieetsous.resx">
+      <DependentUpon>xtraEtatStockparcategorieetsous.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Etat\xtrahistoBonEntree.resx">
+      <DependentUpon>xtrahistoBonEntree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Etat\xtraJournalBonEntree.resx">
+      <DependentUpon>xtraJournalBonEntree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Etat\xtraJournalBonEntreeFrs.resx">
+      <DependentUpon>xtraJournalBonEntreeFrs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Etat\xtraJournalBonSortie.resx">
+      <DependentUpon>xtraJournalBonSortie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Etat\xtraJournalBonSortieClient.resx">
+      <DependentUpon>xtraJournalBonSortieClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Etat\xtraJournalRetour.resx">
+      <DependentUpon>xtraJournalRetour.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Etat\xtraJournalRetourClient.resx">
+      <DependentUpon>xtraJournalRetourClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Etat\xtraListearticles.resx">
+      <DependentUpon>xtraListearticles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Etat\xtraListedesClients.resx">
+      <DependentUpon>xtraListedesClients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Etat\xtralistefournisseur.resx">
+      <DependentUpon>xtralistefournisseur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Etat\liste_tontine.resx">
+      <DependentUpon>liste_tontine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Etat\xtrBonSortie.resx">
+      <DependentUpon>xtrBonSortie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConnexion\BaseDonnee.resx">
+      <DependentUpon>BaseDonnee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConnexion\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEdition\Frmbenefice.resx">
+      <DependentUpon>Frmbenefice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEdition\frmlistecommission.resx">
+      <DependentUpon>frmlistecommission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEdition\Frmlistetontine.resx">
+      <DependentUpon>Frmlistetontine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEdition\Frmliste_cotisation_fin.resx">
+      <DependentUpon>Frmliste_cotisation_fin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEdition\Frmliste_parc.resx">
+      <DependentUpon>Frmliste_parc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEdition\Frmlisting_tontine_par_collecteur.resx">
+      <DependentUpon>Frmlisting_tontine_par_collecteur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEdition\Frmlisting_tontine_solde_zero.resx">
+      <DependentUpon>Frmlisting_tontine_solde_zero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEdition\Frm_etat_de_stocks.resx">
+      <DependentUpon>Frm_etat_de_stocks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEdition\Frm_liste_vente.resx">
+      <DependentUpon>Frm_liste_vente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFiltre\FrmFiltreclt.resx">
+      <DependentUpon>FrmFiltreclt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFiltre\Frmfiltreetatstock.resx">
+      <DependentUpon>Frmfiltreetatstock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFiltre\Frmfiltrefrsbe.resx">
+      <DependentUpon>Frmfiltrefrsbe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFiltre\Frmfiltclientreretour.resx">
+      <DependentUpon>Frmfiltclientreretour.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGestion\Affectationparkclients.resx">
+      <DependentUpon>Affectationparkclients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGestion\Frmcollecteurdroit.resx">
+      <DependentUpon>Frmcollecteurdroit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGestion\Frmcollecteurgauche.resx">
+      <DependentUpon>Frmcollecteurgauche.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGestion\Frmparkproduits.resx">
+      <DependentUpon>Frmparkproduits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGestion\Frmimport.resx">
+      <DependentUpon>Frmimport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOperations\commissiondroite.resx">
+      <DependentUpon>commissiondroite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOperations\commissiongauche.resx">
+      <DependentUpon>commissiongauche.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOperations\Frmbonsortirupdate.resx">
+      <DependentUpon>Frmbonsortirupdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOperations\Frmfacturationdroite.resx">
+      <DependentUpon>Frmfacturationdroite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOperations\Frmfacturationgauche.resx">
+      <DependentUpon>Frmfacturationgauche.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOperations\FrmInterrogation.resx">
+      <DependentUpon>FrmInterrogation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOperations\Frmreçu.resx">
+      <DependentUpon>Frmreçu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOperations\Frmtontinedroit.resx">
+      <DependentUpon>Frmtontinedroit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOperations\Frmtontinegauche.resx">
+      <DependentUpon>Frmtontinegauche.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOperations\Frmupdate_facture_tontine.resx">
+      <DependentUpon>Frmupdate_facture_tontine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOperations\Frm_vente_simple.resx">
+      <DependentUpon>Frm_vente_simple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOperations\Frm_vente_simple_droite.resx">
+      <DependentUpon>Frm_vente_simple_droite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOperations\Frm_vente_simple_update.resx">
+      <DependentUpon>Frm_vente_simple_update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmParam\Frmzones.resx">
+      <DependentUpon>Frmzones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmrapports\FrmEtatstock.resx">
+      <DependentUpon>FrmEtatstock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEdition\Frmprint.resx">
+      <DependentUpon>Frmprint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGestion\Frmajouterclient.resx">
+      <DependentUpon>Frmajouterclient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGestion\Frmajouterfournisseur.resx">
+      <DependentUpon>Frmajouterfournisseur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGestion\Frmarticledrt.resx">
+      <DependentUpon>Frmarticledrt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGestion\Frmarticlegauche.resx">
+      <DependentUpon>Frmarticlegauche.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGestion\Frmcltdrt.resx">
+      <DependentUpon>Frmcltdrt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGestion\Frmcltgauche.resx">
+      <DependentUpon>Frmcltgauche.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGestion\FrmFrsdroite.resx">
+      <DependentUpon>FrmFrsdroite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGestion\FrmFrsgauche.resx">
+      <DependentUpon>FrmFrsgauche.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenu\Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenu\SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOperations\Frmbonentreedroite.resx">
+      <DependentUpon>Frmbonentreedroite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOperations\FrmbonEntreegauche.resx">
+      <DependentUpon>FrmbonEntreegauche.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOperations\Frmbonsortiedroite.resx">
+      <DependentUpon>Frmbonsortiedroite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOperations\Frmbonsortiegauche.resx">
+      <DependentUpon>Frmbonsortiegauche.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOperations\FrmmodifBonretour.resx">
+      <DependentUpon>FrmmodifBonretour.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOperations\Frmmodifierbonentree.resx">
+      <DependentUpon>Frmmodifierbonentree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOperations\Frmretourdroite.resx">
+      <DependentUpon>Frmretourdroite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOperations\Frmretourgauchecs.resx">
+      <DependentUpon>Frmretourgauchecs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmParam\Frmcategorie.resx">
+      <DependentUpon>Frmcategorie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmParam\FrmClassification.resx">
+      <DependentUpon>FrmClassification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmParam\FrmMagasin.resx">
+      <DependentUpon>FrmMagasin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmParam\Frmparametragegeneral.resx">
+      <DependentUpon>Frmparametragegeneral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmParam\Frmparamgauche.resx">
+      <DependentUpon>Frmparamgauche.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmParam\Frmsociete.resx">
+      <DependentUpon>Frmsociete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmParam\Frmsouscategorie.resx">
+      <DependentUpon>Frmsouscategorie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmrapports\FrmJournalBonEntree.resx">
+      <DependentUpon>FrmJournalBonEntree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmrapports\FrmJournalBonSortie.resx">
+      <DependentUpon>FrmJournalBonSortie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmrapports\FrmJournalRetour.resx">
+      <DependentUpon>FrmJournalRetour.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmrapports\Frmrapportclt.resx">
+      <DependentUpon>Frmrapportclt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmrequetes\Frmrequete.resx">
+      <DependentUpon>Frmrequete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmutilisateur\Frmacces.resx">
+      <DependentUpon>Frmacces.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmutilisateur\FrmProfilgauche.resx">
+      <DependentUpon>FrmProfilgauche.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmutilisateur\Frmuser.resx">
+      <DependentUpon>Frmuser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmutilisateur\Frmusergauche.resx">
+      <DependentUpon>Frmusergauche.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="DataEtat\DataSetEtat.xsc">
+      <DependentUpon>DataSetEtat.xsd</DependentUpon>
+    </None>
+    <None Include="DataEtat\DataSetEtat.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetEtat.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataEtat\DataSetEtat.xss">
+      <DependentUpon>DataSetEtat.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customizegrid_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reset_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reset_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\managedatasource_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\managedatasource_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\build_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\build_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\properties_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\savepagesetup_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\savepagesetup_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\three.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\three1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\technology_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\technology_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\version_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\version_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\version_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\version_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chartyaxissettings_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chartyaxissettings_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tableofcontent_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tableofcontent_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\summary_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\summary_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formatwraptext_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formatwraptext_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cube_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cube_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botask_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botask_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customizegrid_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newmail_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newmail_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spacingdecrease_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spacingdecrease_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icone sql.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bopermission_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boreport2_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boreport2_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loadpagesetup_16x16.png" />
+    <None Include="Resources\loadpagesetup_32x32.png" />
+    <None Include="Resources\article_16x16.png" />
+    <None Include="Resources\article_32x32.png" />
+    <None Include="Resources\inserttable_16x16.png" />
+    <None Include="Resources\inserttable_32x32.png" />
+    <None Include="Resources\snapheader_16x16.png" />
+    <None Include="Resources\snapheader_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 et x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splash5.png" />
+    <None Include="Resources\image sql.jpg" />
+    <None Include="Resources\splash4.png" />
+    <None Include="Resources\icon3.png" />
+    <None Include="Resources\notification.png" />
+    <None Include="Resources\icone2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon5.ico" />
+    <None Include="Resources\bo_kpi_scorecard.svg" />
+    <None Include="Resources\bo_note.svg" />
+    <None Include="Resources\open2.svg" />
+    <None Include="Resources\datasource.svg" />
+    <None Include="Resources\errorbarswithpercentage.svg" />
+    <None Include="Resources\bottom10percent.svg" />
+    <None Include="Resources\icon5.ico" />
+    <None Include="Resources\image sql1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
