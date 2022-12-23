@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.Utils.Drawing.StubGlyphOptions stubGlyphOptions2 = new DevExpress.Utils.Drawing.StubGlyphOptions();
+            DevExpress.Utils.Drawing.StubGlyphOptions stubGlyphOptions4 = new DevExpress.Utils.Drawing.StubGlyphOptions();
             DevExpress.XtraGrid.GridFormatRule gridFormatRule2 = new DevExpress.XtraGrid.GridFormatRule();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frmprets_gauche));
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -64,7 +64,6 @@
             this.colprenomclient = new DevExpress.XtraGrid.Columns.GridColumn();
             this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
             this.tmp_clientTableAdapter = new suivibouteilles.Dataset.DataSet1TableAdapters.tmp_clientTableAdapter();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
             this.panelControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
@@ -78,15 +77,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtcodecl.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tmpclientBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // gridColumn2
             // 
-            stubGlyphOptions2.ColorMode = DevExpress.Utils.Drawing.GlyphColorMode.Green;
-            stubGlyphOptions2.Type = DevExpress.Utils.Drawing.GlyphBackgroundType.Ellipse;
+            stubGlyphOptions4.ColorMode = DevExpress.Utils.Drawing.GlyphColorMode.Green;
+            stubGlyphOptions4.Type = DevExpress.Utils.Drawing.GlyphBackgroundType.Ellipse;
             this.behaviorManager1.SetBehaviors(this.gridColumn2, new DevExpress.Utils.Behaviors.Behavior[] {
-            ((DevExpress.Utils.Behaviors.Behavior)(DevExpress.Utils.Behaviors.Common.StubGlyphBehavior.Create(typeof(DevExpress.XtraGrid.Views.Grid.BehaviorSource.StubGlyphBehaviorSourceForGridColumn), stubGlyphOptions2, new System.Drawing.Size(16, 16))))});
+            ((DevExpress.Utils.Behaviors.Behavior)(DevExpress.Utils.Behaviors.Common.StubGlyphBehavior.Create(typeof(DevExpress.XtraGrid.Views.Grid.BehaviorSource.StubGlyphBehaviorSourceForGridColumn), stubGlyphOptions4, new System.Drawing.Size(16, 16))))});
             this.gridColumn2.Caption = "Présent";
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.Visible = true;
@@ -249,7 +247,6 @@
             // 
             // panelControl2
             // 
-            this.panelControl2.Controls.Add(this.textEdit1);
             this.panelControl2.Controls.Add(this.txtcodecl);
             this.panelControl2.Controls.Add(this.simpleButton1);
             this.panelControl2.Controls.Add(this.Btupdate);
@@ -273,6 +270,7 @@
             // 
             // simpleButton1
             // 
+            this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
             this.simpleButton1.Location = new System.Drawing.Point(291, 14);
             this.simpleButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.simpleButton1.Name = "simpleButton1";
@@ -281,6 +279,7 @@
             this.simpleButton1.Text = "&Liste";
             this.simpleButton1.ToolTipTitle = "Liste des Fournisseurs";
             this.simpleButton1.Visible = false;
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // Btupdate
             // 
@@ -351,15 +350,6 @@
             // 
             this.tmp_clientTableAdapter.ClearBeforeFill = true;
             // 
-            // textEdit1
-            // 
-            this.textEdit1.Enabled = false;
-            this.textEdit1.Location = new System.Drawing.Point(439, 18);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(36, 20);
-            this.textEdit1.TabIndex = 20;
-            this.textEdit1.Visible = false;
-            // 
             // Frmprets_gauche
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -380,7 +370,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtcodecl.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tmpclientBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -419,7 +408,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn colDtModification;
         private System.Windows.Forms.BindingSource tmpclientBindingSource1;
         private Dataset.DataSet1TableAdapters.tmp_clientTableAdapter tmp_clientTableAdapter;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
     }
 }
 
