@@ -99,6 +99,8 @@
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.txtmise = new DevExpress.XtraEditors.TextEdit();
             this.splitterControl3 = new DevExpress.XtraEditors.SplitterControl();
+            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
@@ -145,6 +147,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtidmise.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtcommentaire.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtmise.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // labelControl6
@@ -687,6 +691,8 @@
             // 
             // panelControl8
             // 
+            this.panelControl8.Controls.Add(this.textEdit2);
+            this.panelControl8.Controls.Add(this.textEdit1);
             this.panelControl8.Controls.Add(this.txtidafect);
             this.panelControl8.Controls.Add(this.txtindexe);
             this.panelControl8.Controls.Add(this.txtnbrecase);
@@ -863,6 +869,26 @@
             this.splitterControl3.TabIndex = 138;
             this.splitterControl3.TabStop = false;
             // 
+            // textEdit1
+            // 
+            this.textEdit1.EditValue = "0";
+            this.textEdit1.Enabled = false;
+            this.textEdit1.Location = new System.Drawing.Point(462, 72);
+            this.textEdit1.Name = "textEdit1";
+            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textEdit1.Properties.Appearance.Options.UseFont = true;
+            this.textEdit1.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
+            this.textEdit1.Properties.MaskSettings.Set("mask", "n0");
+            this.textEdit1.Size = new System.Drawing.Size(100, 26);
+            this.textEdit1.TabIndex = 57;
+            // 
+            // textEdit2
+            // 
+            this.textEdit2.Location = new System.Drawing.Point(634, 78);
+            this.textEdit2.Name = "textEdit2";
+            this.textEdit2.Size = new System.Drawing.Size(100, 20);
+            this.textEdit2.TabIndex = 58;
+            // 
             // Frmremboursement_droit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -922,6 +948,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtidmise.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtcommentaire.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtmise.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1001,6 +1029,8 @@
        // private Dataset.DataSet1TableAdapters.TgridtontineclientTableAdapter tgridtontineclientTableAdapter;
         private DevExpress.XtraEditors.TextEdit txtnum_depot;
         private DevExpress.XtraGrid.Columns.GridColumn colnumdepot;
+        private DevExpress.XtraEditors.TextEdit textEdit2;
+        private DevExpress.XtraEditors.TextEdit textEdit1;
     }
 }
 
